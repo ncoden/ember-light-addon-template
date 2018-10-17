@@ -18,7 +18,8 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test --config-file config/testem.js",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each --config-file config/testem.js",
+    "test:watch": "ember test --config-file config/testem.js --server"
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0"
