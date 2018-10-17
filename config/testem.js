@@ -1,4 +1,5 @@
 module.exports = {
+  framework: 'mocha',
   test_page: 'tests/index.html?hidepassed',
   disable_watching: true,
   launch_in_ci: [
@@ -7,18 +8,21 @@ module.exports = {
   launch_in_dev: [
     'Chrome'
   ],
+  browser_start_timeout: 60,
   browser_args: {
     Chrome: {
-      ci: [
+      mode: 'ci',
+      args: [
         // --no-sandbox is needed when running Chrome inside a container
-        process.env.CI ? '--no-sandbox' : null,
-        '--headless',
+        process.env.TRAVIS ? '--no-sandbox' : null,
+
         '--disable-gpu',
         '--disable-dev-shm-usage',
         '--disable-software-rasterizer',
+        '--headless',
         '--mute-audio',
-        '--remote-debugging-port=0',
-        '--window-size=1440,900'
+        '--remote-debugging-port=9222',
+        '--window-size=1440,900',
       ].filter(Boolean)
     }
   }
