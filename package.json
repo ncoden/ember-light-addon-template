@@ -1,7 +1,7 @@
 {
-  "name": "ember-light-addon-template",
+  "name": "your_addon_name",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "👷 Light template for Ember addons",
   "keywords": [
     "ember-addon"
   ],

@@ -1,5 +1,19 @@
-ember-light-addon-template
-==============================================================================
+# ember-light-addon-template
+> 👷 Light template for Ember addons
+
+1. Clone this repo
+  ```sh
+  git clone git@github.com:ncoden/ember-light-addon-template.git <YOUR_ADDON_NAME>
+  ```
+2. Install dependencies
+  ```sh
+  npm install
+  ```
+3. Replace all `your_addon_name` by your addon name
+4. Remove this from the `README.md`
+5. That's all! You can now start adding your stuff!
+
+---
 
 [Short description of the addon.]
 
@@ -7,9 +21,8 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-light-addon-template
+ember install your_addon_name
 ```
-
 
 Usage
 ------------------------------------------------------------------------------
@@ -23,7 +36,7 @@ Contributing
 ### Installation
 
 * `git clone <repository-url>`
-* `cd ember-light-addon-template`
+* `cd your_addon_name`
 * `npm install`
 
 ### Linting
