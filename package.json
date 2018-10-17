@@ -17,9 +17,9 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test --config-file config/testem.js",
-    "test:all": "ember try:each --config-path config/ember-try.js --- npm test",
-    "test:watch": "ember test --config-file config/testem.js --server"
+    "test": "ember test",
+    "test:all": "ember try:each",
+    "test:watch": "ember test"
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0"
